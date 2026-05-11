@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lorex – Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 4px; }
+    h2 { font-size: 1.1rem; font-weight: 600; margin-top: 36px; }
+    p, li { font-size: 0.95rem; color: #3a3a3c; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .updated { font-size: 0.85rem; color: #888; margin-bottom: 36px; }
+    a { color: #0066cc; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: May 11, 2026</p>
+
+  <p>
+    Lorex ("we", "our", or "the app") is a macOS application that captures your clipboard content
+    and lets you search and chat with it. This policy explains what data is collected, where it
+    goes, and how it is used.
+  </p>
+
+  <h2>1. Data We Collect</h2>
+  <p>Lorex collects only the data necessary to provide its core functionality:</p>
+  <ul>
+    <li><strong>Clipboard content.</strong> Text you copy on your Mac is captured and stored locally
+      in an encrypted SQLite database on your device. Lorex never captures passwords, credit card
+      numbers, IBAN numbers, national ID numbers, or API keys unless you explicitly enable those
+      categories in Settings.</li>
+    <li><strong>Chat messages.</strong> Messages you type in the chat interface, along with relevant
+      clipboard snippets retrieved from your local database, are sent to our API to generate a
+      response. These are not stored on our servers beyond the duration of the request.</li>
+  </ul>
+  <p>We do not collect your name, email address, or any other personal identifier. We do not use
+  analytics SDKs or advertising frameworks.</p>
+
+  <h2>2. How Data Is Processed</h2>
+  <p>To power search and chat, Lorex uses two external services:</p>
+  <ul>
+    <li><strong>Voyage AI</strong> (voyageai.com) — clipboard snippets are sent to Voyage AI's
+      API to generate vector embeddings, which enable semantic search. Voyage AI's privacy policy
+      is available at <a href="https://www.voyageai.com/privacy" target="_blank">voyageai.com/privacy</a>.</li>
+    <li><strong>Anthropic Claude</strong> — your chat messages and relevant clipboard context are
+      forwarded to Anthropic's Claude API via a secure proxy to generate responses. Anthropic's
+      privacy policy is available at
+      <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>.</li>
+  </ul>
+  <p>Both services receive only the minimum text necessary to answer your query. No data is sold or
+  shared with any other third party.</p>
+
+  <h2>3. Data Storage</h2>
+  <p>All captured clipboard content is stored <strong>locally on your Mac</strong> in the app's
+  sandboxed container. You can delete all stored data at any time from the Captures tab inside
+  the app. Uninstalling Lorex removes all local data.</p>
+
+  <h2>4. Subscriptions &amp; Payments</h2>
+  <p>Lorex offers optional auto-renewable subscriptions (monthly and yearly) that are processed
+  entirely through Apple's App Store. We never see or store your payment information. Subscription
+  management, cancellation, and refund requests are handled through your Apple ID account settings
+  or at <a href="https://apps.apple.com/account/subscriptions" target="_blank">apps.apple.com/account/subscriptions</a>.</p>
+
+  <h2>5. Children's Privacy</h2>
+  <p>Lorex is not directed at children under 13 and does not knowingly collect data from children.</p>
+
+  <h2>6. Changes to This Policy</h2>
+  <p>We may update this policy from time to time. The "Last updated" date at the top of this page
+  will reflect any changes. Continued use of the app after changes constitutes acceptance of the
+  updated policy.</p>
+
+  <h2>7. Contact</h2>
+  <p>If you have questions about this privacy policy, please contact us at:
+  <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a></p>
+
+</body>
+</html>
